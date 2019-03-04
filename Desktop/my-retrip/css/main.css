@@ -1,0 +1,743 @@
+@charset "UTF-8";
+
+/*初期設定*/
+
+
+body {
+  color: #666;
+}
+
+@media (max-width: 480px) {
+    body {
+        width: 470px;
+        margin: 0;
+        padding: 0 20px;
+     }
+}
+
+a{
+  text-decoration: none;
+  color: #2b2b2b;
+}
+
+ul li {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  height: 85px;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+    header {
+        background-color: #eee;
+        border-bottom: 8px solid #fff;
+        border-top: 8px solid #fff;
+        width: 100%;
+        margin: 0 auto;
+        height: 70px;
+     }
+}
+
+div#wrapper {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+    #wrapper {
+        flex-direction: column;
+        width: 100%;
+        overflow: hidden;
+     }
+}
+
+div#main_visual {
+  height: 300px;
+  width: 100%;
+}
+
+
+div#article {
+  height: 4100px;
+  width: 70%;
+  float: left;
+}
+
+@media (max-width: 480px) {
+  div#article {
+    height: 2900px;
+  }
+}
+
+aside {
+  height: 3280px;
+  width: 30%;
+  float: right;
+}
+
+section.app_info {
+  background-color: #eee;
+  height: 240px;
+  width: 100%;
+}
+
+section.info {
+  height: 220px;
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #f9f9f9;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*header*/
+/*検索バー*/
+.form2 {
+  width: 200px;
+  height: 40px;
+  position: absolute;
+  float: left;
+  margin-top: 18px;
+}
+
+
+@media (max-width: 480px) {
+    .form2 {
+        display: none;
+     }
+}
+
+
+.text {
+  border: white;
+  width: 223px;
+  margin-left: 8px;
+  height: 30px;
+  margin-top: 5px;
+  outline: none;
+  border-radius: 3px;
+  padding-left: 3px;
+  background-color: #eee;
+}
+
+.submit {
+  position:  relative;
+  border: white;
+  top: -30px;
+  left: 206px;
+  height: 28px;
+  cursor: pointer;
+  color: #222;
+  background-color: #eee;
+}
+
+.fas {
+  background-color: #eee;
+  color: #999;
+  font-size: 15px;
+  
+}
+
+/*ヘッダーロゴ*/
+.retrip-logo {
+  width: 125px;
+  height: 40px;
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+    .retrip-logo {
+        padding-left: 15%;
+        height: 25px;
+     }
+}
+
+.headerLogo {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.header-right {
+  float: right;
+  margin-right: 10px;
+  padding: 20px;
+}
+
+.header-right a {
+  float: left;
+}
+
+.header-right p{
+  float: left;
+  color: #000;
+  font-size: 11px;
+  margin-top: 18px;
+}
+
+.login-bar {
+  width: 25px;
+  margin-left: 20px;
+  padding-top: 15px;
+}
+
+
+/*メインビジュアル*/
+
+#main_visual {
+  margin: 0;
+}
+
+.main_item {
+  height: 300px;
+  width: 33.3%;
+  }
+  
+@media (max-width: 480px) {
+    .first-img {
+        width: 100%;
+     }
+}
+
+@media (max-width: 480px) {
+    .hide-img {
+        display: none;
+     }
+}
+
+.main_item h1 {
+  color: white;
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 200px;
+}
+
+.main_container {
+  /*display: flex;*/
+  display: inline-flex;
+  width: 100%;
+}
+
+.main_items {
+  margin-left: 30px;
+}
+
+
+/*記事*/
+
+.main_article {
+  padding: 0 20px;
+}
+
+@media (max-width: 480px) {
+     .main_article {
+        width: 400px;
+        margin-left: 20px;
+     }
+}
+
+#article h2 {
+  border-bottom: 1px solid #000;
+  font-size: 15px;
+  padding-bottom: 13px;
+  padding-top: 20px;
+}
+
+.post {
+  display: flex;
+  align-items: center;
+  padding: 20px 10px;
+  border-bottom: 1px solid #eee;
+  
+}
+
+@media (max-width: 480px) {
+    .post img {
+        width: 70px;
+        height: 70px;
+     }
+}
+
+.thumbnail {
+  padding-right: 10px;
+}
+
+.media {
+  width: 600px;
+}
+
+.title {
+  font-size: 21px;
+  font-weight: bold;
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 15px;
+     }
+}
+
+.subtitle {
+  color: #899179;
+  margin: 0;
+  font-size: 13px;
+}
+
+@media (max-width: 480px) {
+    .subtitle {
+        display: none;
+     }
+}
+
+/*サイドバー*/
+@media (max-width: 480px) {
+    .sidebar-article {
+        width: 100%;
+        margin-left: 50px;
+     }
+}
+
+
+.area_view {
+  padding: 0 15px;
+  width: 300px;
+}
+
+@media (max-width: 480px) {
+    .area_view {
+        flex-direction: row;
+        width: 400px;
+     }
+}
+
+@media (max-width: 480px) {
+    .big-wrapper {
+        flex-direction: column;
+     }
+}
+
+.area_view h2 {
+  border-bottom: 1px solid #2b2b2b;
+  font-size: 15px;
+  padding-bottom: 13px;
+  padding-top: 20px;
+}
+
+.area_post {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  margin: 8px 0;
+  padding-bottom: 20px;
+  width: 300px;
+}
+
+.area_img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/*イメージとパラグラフが入っているので大きさに注意*/
+div.post-item {
+  width: 160px;
+  display: flex;
+}
+
+div.post-item p {
+  margin-left: 20px;
+  font-size: 13px;
+}
+
+div.area_view_bottom p {
+  color: #aaa;
+  font-size: 13px;
+  float: right;
+  margin-top: 2px;
+  padding-right: 20px;
+}
+
+/*サイドバー広告*/
+
+div.advertisement{
+  margin: 0 20px;
+}
+
+
+/*おすすめタグ*/
+
+div.recommended_tags {
+  font-size: 13px;
+  border-bottom: 1px solid #ccc;
+  margin: 8px 0;
+  padding-bottom: 10px;
+  margin: 0 20px 0 20px;
+  width: 300px;
+}
+
+div.recommended_tags h2 {
+  font-size: 15px;
+  border-bottom: 1px solid #2b2b2b;
+  padding-bottom: 13px;
+  padding-top: 20px;
+}
+
+#tag {
+  color: #aaa;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 3px 0px;
+  
+}
+
+.tags {
+  margin: 0 15px 0 0;
+}
+
+.tagName {
+  color: #000;
+  padding-left: 5px;
+}
+
+div.tags_bottom {
+  padding: 0 20px;
+}
+
+div.tags_bottom p {
+  color: #aaa;
+  font-size: 13px;
+  float: right;
+  margin-top: 12px;
+  padding-right: 5px;
+}
+
+/*人気ランキング*/
+
+div#ranking {
+  width: 300px;
+  padding: 0 20px;
+}
+
+div.rank-title h2 {
+  font-size: 15px;
+  border-bottom: 1px solid #2b2b2b;
+  padding-bottom: 10px;
+  padding-top: 15px;
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+
+.rank-items {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.ranking_img {
+  width: 70px;
+  height: 70px;
+}
+
+.ranking_index {
+  font-size: 14px;
+  word-wrap: break-word;
+  padding-left: 10px;
+}
+
+div.ranking-index-box a {
+  padding-left: 10px;
+  display: block;
+  width: 210px;
+}
+
+
+/*ピックアップ特集*/
+#pickUps {
+  width: 300px;
+  padding: 0 20px;
+  margin-top: 60px;
+}
+
+.pickUps-title h2 {
+  font-size: 15px;
+  border-bottom: 1px solid #2b2b2b;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+/*RETRIPをフォロー*/
+
+#retrip-follow {
+  padding: 0 20px;
+}
+
+#retrip-follow h2 {
+  font-size: 15px;
+  border-bottom: 1px solid #2b2b2b;
+  padding-bottom: 10px;
+  padding-top: 8px;
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+
+.retripFollow {
+  font-size: 15px;
+}
+
+.btn {
+  font-size: 13px;
+  font-weight: bold;
+  display: block;
+  width: 300px;
+  height: 40px;
+  text-align: center;
+  padding-top: 15px;
+  border-radius: 5px;
+  margin-top: 15px;
+  letter-spacing: 2px;
+}
+
+.fab {
+  margin-right: 10px;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.facebook-button {
+  color: white;
+  background-color: #3b5998;
+  border-bottom: 3px solid #404c66;
+}
+
+.twitter-button {
+  color: white;
+  background-color: #55acee;
+  border-bottom: 3px solid #5698cb;
+}
+
+.insta-button {
+  color: #555;
+  background-color: #fafafa;
+  border: 1px solid #eaeaea;
+  border-bottom: 3px solid #e5e5e5;
+}
+
+/*ページ移動リンク*/
+
+#pagelinks {
+  width: 70%;
+  float: right;
+  padding-top: 40px;
+}
+
+@media (max-width: 480px) {
+   ul.pagelinks_numbers {
+        width: 480px;
+        background-color: #eee;
+        height: 50px;
+     }
+}
+
+.pagelinks_numbers {
+  display: flex;
+}
+
+.pagelinks_numbers li {
+  font-size: 15px;
+  margin: 0 20px;
+  
+}
+
+.pagelinks_numbers a {
+  color: #bbb;
+  font-weight: normal;
+}
+
+/*アプリ紹介セクション*/
+
+.app_info_box {
+  width: 970px;
+  height: 300px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.apps_imgs img {
+  width: 170px;
+  height: 50px;
+}
+
+.apps_imgs {
+  margin-left: 50px;
+  padding-top: 20px;
+}
+
+.apps_imgs h2 {
+  color: white;
+  font-size: 20px;
+  padding-bottom: 20px;
+  opacity: 0.9;
+}
+
+.apps_imgs p {
+  color: white;
+  font-size: 13px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.apps_imgs a {
+  margin-left: 20px;
+}
+
+/*インフォメーション*/
+
+#info_wrap {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.info_section {
+  width: 650px;
+  float: left;
+  margin-left: 30px;
+}
+
+.area_info {
+  margin-top: 30px;
+}
+
+.area_info h2 {
+  font-size: 14px;
+  color: #666;
+  padding-left: 55px;
+}
+
+.fa-map-marker-alt {
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.area_info ul {
+  display: flex;
+  color: #666;
+}
+
+.area_info li {
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+/*人気のタグインフォ*/
+
+.tags_info {
+  margin-top: 30px;
+}
+
+.tags_info h2 {
+  font-size: 14px;
+  color: #666;
+  padding-left: 55px;
+}
+
+.fa-hashtag {
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.tags_info ul {
+  display: flex;
+  color: #666;
+}
+
+.tags_info li {
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+.about_retrip {
+  width: 480px;
+  float: right;
+}
+
+.about_retrip h2 {
+  font-size: 14px;
+  color: #666;
+  margin-top: 28px;
+  padding-left: 50px;
+}
+
+.about_company {
+  display: flex;
+}
+
+.about_company a {
+  font-size: 12px;
+  color: #666;
+}
+
+.about_company li {
+  margin: 5px 0;
+}
+
+.about_company ul {
+  margin: 0;
+}
+
+/*フッター*/
+/*フッターレフト*/
+.footer-left {
+  float: left;
+  width:700px;
+  height: 50px;
+  display: flex;
+}
+
+.footer-left p {
+  font-size: 10px;
+  color: #666;
+}
+
+.footer-logo {
+  margin: 15px;
+}
+
+.copyright {
+  margin: 20px;
+}
+
+/*フッターライト*/　
+
+a:hover{
+　text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+      aside {
+          float: none;
+          margin: 0;
+         width: 100%;
+         /*height: 3300px;*/
+     }
+}
+
+@media (max-width: 480px) {
+      .header-right p {
+         display: none;
+     }
+}
